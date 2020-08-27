@@ -1,0 +1,11 @@
+{
+  "name": "great-western-buildings_2",
+  "version": "1.0.0",
+  "description": "Responsive, single-page web application about Steel Buildings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JGG",
+  "license": "ISC"
+}

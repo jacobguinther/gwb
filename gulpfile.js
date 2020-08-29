@@ -32,6 +32,11 @@ gulp.task('scss', function () {
       './src/scss/**/*.scss',
       { ignoreInitial: false },
       gulp.series('scss')
+    ),
+    gulp.watch(
+        './src/scss/**/*.scss',
+        { ignoreInitial: false },
+        gulp.series('edge'),
     );
     // gulp.watch(
     //   ['./src/views/**/*.ejs', './src/data/**/*.json'],

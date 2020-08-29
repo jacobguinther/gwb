@@ -34,7 +34,7 @@ gulp.task('scss', function () {
       gulp.series('scss')
     ),
     gulp.watch(
-        './src/scss/**/*.scss',
+        './src/views/*.edge',
         { ignoreInitial: false },
         gulp.series('edge'),
     );

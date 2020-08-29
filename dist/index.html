@@ -27,7 +27,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" id="quote-form" novalidate>
 
                         <div class="form-group">
                             <label for="quote-form--firstname">First
@@ -122,8 +122,8 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
                         data-dismiss="modal">Close</button>
-                        <button type="submit"
-                        class="btn btn-primary">Get Price</button>
+                    <button type="submit" form="quote-form" class="btn btn-primary">Get
+                        Price</button>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
     </nav>
 
     <div class="main-content">
-        <div id="carouselExampleIndicators" class="carousel slide  mb-5"
+        <div id="carouselExampleIndicators" class="carousel slide  mb-4"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0"
@@ -202,7 +202,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="service col-md-4 my-5">
+                <div
+                    class="service col-md-4 my-5 d-flex flex-column justify-content-between">
                     <div>
                         <p class="text-center">
                             <?xml version="1.0" encoding="UTF-8"?>
@@ -258,7 +259,8 @@
                             details »</a>
                     </p>
                 </div>
-                <div class="service col-md-4 my-5">
+                <div
+                    class="service col-md-4 my-5 d-flex flex-column justify-content-between">
                     <div>
                         <p class="text-center">
                             <?xml version="1.0" encoding="UTF-8"?>
@@ -321,7 +323,8 @@
                             details »</a>
                     </p>
                 </div>
-                <div class="service col-md-4 my-5">
+                <div
+                    class="service col-md-4 my-5 d-flex flex-column justify-content-between">
                     <div>
                         <p class="text-center">
                             <?xml version="1.0" encoding="UTF-8"?>
@@ -379,7 +382,7 @@
         </div>
 
         <div class="bg-light">
-            <div class="container mt-5 py-5 px-0">
+            <div class="container mt-4 py-5 px-0">
                 <div class="container">
                     <div class="row featurette">
                         <div class="col-lg-7">
@@ -395,8 +398,7 @@
                                 prices that won't break the bank.</p>
                         </div>
                         <div class="col-lg-5">
-                            <img src="imgs/about-us_thumb.jpg"
-                                class="img-fluid"
+                            <img src="imgs/about-us_thumb.jpg" class="img-fluid"
                                 alt="Responsive image">
                         </div>
                     </div>

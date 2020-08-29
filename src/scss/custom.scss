@@ -15,11 +15,7 @@ body {
 //   flex: 1 0 auto;
 }
 
-.service {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .footer {
 //   flex-shrink: 0;
@@ -35,5 +31,6 @@ $theme-colors: (
   "light": #DEE2E6,
   // "dark": ,
 );
+
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

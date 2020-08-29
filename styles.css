@@ -1,0 +1,34 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    flex: 1 0 auto;
+}
+.carousel{
+    /* height: 400px; */
+    /* overflow-y: hidden; */
+}
+.service {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.servise--button {
+    /* align-self: flex-start; */
+}
+
+.footer {
+    /* border: 1px solid red;hj */
+    flex-shrink: 0;
+}

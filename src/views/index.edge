@@ -1,9 +1,8 @@
 @layout('layouts/master')
 
 @section('carousel')
-    @!component('components.carouselComponent')
+    @!component('components.carouselComponent', carouselArr=["imgs/Building_1.jpg","imgs/Building_2.jpg","imgs/Building_3.jpg"])
 @endsection
-
 
 @section('main-content')
 <div class="container">

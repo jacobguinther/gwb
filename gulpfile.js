@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-// const data = require('gulp-data');
+const data = require('gulp-data');
 // const fs = require('fs');
 // const log = require('fancy-log');
 // const ejs = require('gulp-ejs');

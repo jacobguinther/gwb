@@ -3,17 +3,15 @@ body {
   overflow-x: hidden;
 }
 
-$theme-colors: (
-  // "primary": gray,
-  'primary': #38475e,
-  'secondary': #455773,
-  // "success": ,
-  // "info":    ,
-  // "warning": ,
-  'danger': #ff4136,
-  "light": #DEE2E6,
-  // "dark": ,
-);
+// Fixes padding-right issue when opening modal (issue only when scrollbar present)
+.modal-open{overflow:auto;padding-right:0 !important;}
 
+$theme-colors: (
+  'primary': #516153,
+  'secondary': #455773,
+  'danger': #c63129,
+  "light": #a3a38054,
+  "dark": #3e4a3f,
+);
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

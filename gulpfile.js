@@ -1,8 +1,4 @@
 const gulp = require('gulp');
-const data = require('gulp-data');
-// const fs = require('fs');
-// const log = require('fancy-log');
-// const ejs = require('gulp-ejs');
 const gulpEdge = require('gulp-edgejs');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');

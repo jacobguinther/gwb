@@ -4,14 +4,17 @@ body {
 }
 
 // Fixes padding-right issue when opening modal (issue only when scrollbar present)
-.modal-open{overflow:auto;padding-right:0 !important;}
+.modal-open {
+  overflow: auto;
+  padding-right: 0 !important;
+}
 
 $theme-colors: (
   'primary': #516153,
   'secondary': #455773,
   'danger': #c63129,
-  "light": #a3a38054,
-  "dark": #3e4a3f,
+  'light': #a3a38054,
+  'dark': #3e4a3f,
 );
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

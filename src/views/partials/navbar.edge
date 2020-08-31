@@ -1,0 +1,36 @@
+@component('components.modalComponent', title="Free Building Quote", submitText="Get Price")
+    @slot('modalContent')
+    @include('partials/forms/freeQuoteForm')
+    @endslot
+@endcomponent
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-uppercase" href="#"><i class="fas fa-warehouse d-inline-block mr-2"></i>Steel Buildings</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-uppercase" href="#">Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Contact</a>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+            data-target=".modal-quote">
+            Get A Free Quote
+        </button>
+    </div>
+</nav>

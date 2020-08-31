@@ -1,0 +1,82 @@
+<form class="needs-validation" id="quote-form" novalidate>
+    <div class="form-group">
+        <label for="quote-form--firstname">First
+            Name</label>
+        <input type="text" class="form-control" id="quote-form--firstname"
+            name="firstname" placeholder="John" required>
+        <div class="invalid-feedback">
+            Please enter your first name.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="quote-form--lastname">Last
+            Name</label>
+        <input type="text" class="form-control" id="quote-form--lastname"
+            name="lastname" placeholder="Doe" required>
+        <div class="invalid-feedback">
+            Please enter your last name.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="quote-form--email">Email address</label>
+        <input type="email" class="form-control" id="quote-form--email"
+            name="email" aria-describedby="emailHelp" placeholder="john@doe.com"
+            required>
+        <small id="emailHelp" class="form-text text-muted">We'll
+            never share
+            your email with anyone else.</small>
+        <div class="invalid-feedback">
+            Please enter your email.
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="quote-form--zip">Zip</label>
+            <input type="text" min="10" max="200" class="form-control"
+                id="quote-form--zip" name="zip" pattern="[0-9]*"
+                placeholder="80503" required>
+            <div class="invalid-feedback">
+                Please a zip code.
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="quote-form--phone">Phone</label>
+            <input type="tel" class="form-control" id="quote-form--phone"
+                name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="7201234567" required>
+            <div class="invalid-feedback">
+                Please your phone number.
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="quote-form--length">Length
+                (ft)</label>
+            <input type="number" min="10" max="200" class="form-control"
+                id="quote-form--length" name="length" placeholder="40" required>
+            <div class="invalid-feedback">
+                Please enter a length. (10ft - 200ft)
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="quote-form--width">Width
+                (ft)</label>
+            <input type="number" min="10" max="200" class="form-control"
+                id="quote-form--width" name="width" placeholder="40" required>
+            <div class="invalid-feedback">
+                Please enter a width. (10ft - 200ft)
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="quote-form--height">Height
+                (ft)</label>
+            <input type="number" min="10" max="40" class="form-control"
+                id="quote-form--height" name="height" placeholder="12" required>
+            <div class="invalid-feedback">
+                Please enter a height. (12ft - 40ft)
+            </div>
+        </div>
+    </div>
+</form>

@@ -3,12 +3,12 @@
         <p class="text-center">
             @!yield($slot.svg)
         </p>
-        <h3 class="text-center{{ (title.length < 16) ? " px-3" : ""}}">
-            {{ title }}</h3>
-        @!yield($slot.p)
+        <h3 class="text-center{{ (service.title.length < 16) ? " px-3" : ""}}">
+            {{ service.title }}</h3>
+        <p class="text-center my-4">{{ service.description }}</p>
     </div>
     <p class="text-center">
-        <a class="btn btn-primary" href="#" role="button">View
+    <a class="btn btn-primary" href="{{ service.link }}" role="button">View
             details »</a>
     </p>
 </div>

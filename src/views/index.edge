@@ -1,59 +1,22 @@
 @layout('layouts/masterLayout')
 
 @section('carousel')
-    @!component('components.carouselComponent', carouselArr=["imgs/Building_1.jpg","imgs/Building_2.jpg","imgs/Building_3.jpg"])
+    @!component('components.carouselComponent', carouselArr=globals.data.carouselImages)
 @endsection
 
 @section('main-content')
 <div class="container">
     <div class="row">
-        @component('components.serviceComponent', title="Project Management")
-        @slot('svg')
-        @include('partials/svg/briefcaseSVG')
-        @endslot
-        @slot('p')
-        <p class="text-center my-4">Great Western is more than a
-            steel building company -
-            we're experts in seeing projects through. Start to
-            finish. Before and after. Know Great Western Steel
-            Building Systems has your back.</p>
-        @endslot
-        @endcomponent
-
-        @component('components.serviceComponent', title="Nationwide Delivery")
-        @slot('svg')
-        @include('partials/svg/truckSVG')
-        @endslot
-        @slot('p')
-        <p class="text-center my-4">Great Western building
-            systems
-            are designed to offer
-            aesthetic appeal and longevity. From hurricanes to
-            blizzards, you can rest easy. A Great Western
-            weathers
-            the storm.</p>
-        @endslot
-        @endcomponent
-
-        @component('components.serviceComponent', title="Builder Network")
+        @each(service in globals.data.services)
+            @component('components.serviceComponent', service=service)
             @slot('svg')
-            @include('partials/svg/toolSVG')
+            @include(service.svg)
             @endslot
-            @slot('p')
-            <p class="text-center my-4">Work with our network of
-                general
-                contractors,
-                erectors
-                and concrete professionals. Working with Great
-                Western
-                gets you access to the nation's leading construction
-                pros.</p>
-            @endslot
-        @endcomponent
-
+            @endcomponent
+        @endeach
     </div>
 </div>
-
+ 
 <div class="bg-light">
     <div class="containerg py-5 px-0">
         <div class="container">

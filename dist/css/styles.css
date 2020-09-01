@@ -2,7 +2,8 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: 'Noto Sans JP', sans-serif !important; }
+  font-family: 'Noto Sans JP', sans-serif !important;
+  background-color: #F7F7F7 !important; }
 
 a {
   letter-spacing: 0.1rem; }

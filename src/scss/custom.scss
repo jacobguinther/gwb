@@ -4,6 +4,7 @@ html,
 body {
   overflow-x: hidden;
   font-family: 'Noto Sans JP', sans-serif !important;
+  background-color: #F7F7F7 !important;
 }
 
 a {
@@ -15,7 +16,6 @@ a {
   overflow: auto;
   padding-right: 0 !important;
 }
-
 $theme-colors: (
   'primary': #516153,
   'secondary': #455773,
@@ -23,5 +23,15 @@ $theme-colors: (
   'light': #a3a38054,
   'dark': #3e4a3f,
 );
+// $theme-colors: (
+//   // 'primary': #516153,
+//   // 'primary': #627D98,
+//   'primary': #207227,
+//   'secondary': #455773,
+//   'danger': #c63129,
+//   'light': #E1E1E1,
+//   'dark': #05400A,
+//   // 'dark': #0E5814,
+// );
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

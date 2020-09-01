@@ -1,5 +1,9 @@
 
 module.exports = {
+    servicesSVGColors: {
+      stroke: "#3e4a3f",
+      fill: "#a3a3801d",
+    },
     services: [
       {
         svg: "partials/svg/briefcaseSVG",

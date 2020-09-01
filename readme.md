@@ -38,7 +38,7 @@ gulp watch
 - I chose to use npm and gulp to generate a static landing page.
   - I assumed that including a backend was unnecessary for this project.
 - The index.php file is just for hosting on heroku
-- The form located at the top under *'Get A Free Quote' ( modal )*
+- The **form** located at the top under *'Get A Free Quote' ( modal )*
 - Currently the *'View details'* buttons do not go to anything
 - The social icons at the bottom are linked to GWB social sites
 - I chose to simulate some backend data being passed to the templating engine: `src/data/data.js`

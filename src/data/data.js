@@ -21,9 +21,18 @@ module.exports = {
       }
     ],
     carouselImages: [
-      "imgs/Building_1.jpg",
-      "imgs/Building_2.jpg",
-      "imgs/Building_3.jpg"
-    ]
+      {
+        path: "imgs/Building_1.jpg",
+        altText: "A Beautiful metal building.",
+      },
+      {
+        path: "imgs/Building_2.jpg",
+        altText: "A Beautiful metal building.",
+      },
+      {
+        path: "imgs/Building_3.jpg",
+        altText: "A Beautiful metal building.",
+      }
+    ],
   }
   

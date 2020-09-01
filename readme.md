@@ -3,6 +3,8 @@
 
 Go to [SteelBuildingsProject](https://gwb-project.herokuapp.com/dist/index.html)
 
+*Please be patient. This site is hosted on heroku so it may take a minute for the server to start.*
+
 **Project Guidelines:**
 For this project please use the following guidelines below. If you have any questions or need clarification, please let me know, and I will try to get back to you as soon as I can.
 

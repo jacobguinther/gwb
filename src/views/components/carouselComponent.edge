@@ -1,10 +1,11 @@
 <div id="carousel" class="carousel slide  3" data-ride="carousel">
 
     <div class="carousel-inner">
-        @each(img in carouselArr)
+        @each(slide in carouselArr)
             <div class="carousel-item{{ ($loop.index) === 0 ? " active" : "" }}">
-                <img src="{{ img }}" class="d-block w-100" alt="...">
+                <img src="{{ slide.path }}" class="d-block w-100" alt="{{ slide.altText }}">
             </div>
+
         @endeach
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button"

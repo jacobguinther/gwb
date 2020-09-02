@@ -43,7 +43,7 @@ gulp watch
 - The social icons at the bottom are linked to GWB social sites
 
 ### Todo:
-- Form validation should be improved using javascript.
+- Form validation could be improved.
 - Add credability to the company by:
   - Adding testimonials
   - Adding partner companies

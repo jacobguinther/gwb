@@ -34,12 +34,20 @@ gulp watch
 ### Some things to note:
 
 - All of the source files can be found in the `/src` directory
-
-- I chose to use npm and gulp to generate a static landing page.
+- I chose to simulate some backend data being passed to the templating engine: `src/data/data.js`
+- I decided to use npm and gulp to generate a static landing page.
   - I assumed that including a backend was unnecessary for this project.
 - The index.php file is just for hosting on heroku
-- The **form** located at the top under *'Get A Free Quote' ( modal )*
+- The **form** is in the *'Get A Quote'* modal which can be toggled by either the nav button or the button over the main photo
 - Currently the *'View details'* buttons do not go to anything
 - The social icons at the bottom are linked to GWB social sites
-- I chose to simulate some backend data being passed to the templating engine: `src/data/data.js`
+
+### Todo:
+- Form validation should be improved using javascript.
+- Add credability to the company by:
+  - Adding testimonials
+  - Adding partner companies
+- Generally I think the UI could use work.
+
+
 

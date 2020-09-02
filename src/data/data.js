@@ -24,8 +24,9 @@ module.exports = {
         link: "#"
       }
     ],
+    
+    // This is incase we choose to add multiple images to the carousel
     carouselImages: [
-      // This is incase we choose to add multiple images to the carousel
       // {
       //   path: "imgs/Building_1.jpg",
       //   altText: "A Beautiful metal building.",

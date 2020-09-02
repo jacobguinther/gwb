@@ -4,6 +4,18 @@
         @each(slide in carouselArr)
             <div class="carousel-item{{ ($loop.index) === 0 ? " active" : "" }}">
                 <img src="{{ slide.path }}" class="d-block w-100" alt="{{ slide.altText }}">
+                <div class="carousel-overlay">
+                    <div class="d-none d-md-block">
+                        <h3 class="text-shadow text-white ml-3 mt-4">Premium Pre-Engineered Steel Buildings.</h3>
+                        <h5 class="text-shadow text-white ml-3">Competitive prices with unmatched quality. 
+                        </h5>
+                        <button type="button" class="btn btn-dark ml-3 mt-2" data-toggle="modal"
+                        data-target=".modal-quote">
+                        Get Your Free Quote
+                    </button>
+                    </div>
+
+                </div>
             </div>
         @endeach
     </div>

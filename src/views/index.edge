@@ -4,21 +4,26 @@
     @!component('components.carouselComponent', carouselArr=globals.data.carouselImages)
 @endsection
 
+
 @section('main-content')
+
+@include('partials/mobile/callToAction_mobile')
+
 <div class="container">
     <div class="row">
-        @each(service in globals.data.services)
+    @each(service in globals.data.services)
             @component('components.serviceComponent', service=service)
             @slot('svg')
             @include(service.svg)
             @endslot
             @endcomponent
-        @endeach
+    @endeach
     </div>
 </div>
+
  
 <div class="bg-light">
-    <div class="containerg py-5 px-0">
+    <div class="container py-5 px-0">
         <div class="container">
             <div class="row featurette">
                 <div class="col-lg-7">

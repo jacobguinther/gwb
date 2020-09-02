@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 html,
 body {
   overflow-x: hidden;
   font-family: 'Noto Sans JP', sans-serif !important;
-  background-color: #F7F7F7 !important;
+  background-color: #f7f7f7 !important;
+  a {
+    letter-spacing: 0.1rem;
+  }
 }
 
-a {
-  letter-spacing: 0.1rem;
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0)
+  );
+}
+
+.text-shadow {
+  text-shadow: 0px 5px 9px #151a16;
 }
 
 // Fixes padding-right issue when opening modal (issue only when scrollbar present)
@@ -16,22 +32,12 @@ a {
   overflow: auto;
   padding-right: 0 !important;
 }
+
 $theme-colors: (
   'primary': #516153,
-  'secondary': #455773,
   'danger': #c63129,
   'light': #a3a38054,
   'dark': #3e4a3f,
 );
-// $theme-colors: (
-//   // 'primary': #516153,
-//   // 'primary': #627D98,
-//   'primary': #207227,
-//   'secondary': #455773,
-//   'danger': #c63129,
-//   'light': #E1E1E1,
-//   'dark': #05400A,
-//   // 'dark': #0E5814,
-// );
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

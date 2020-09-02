@@ -2,7 +2,7 @@
 module.exports = {
     servicesSVGColors: {
       stroke: "#3e4a3f",
-      fill: "#a3a3801d",
+      fill: "#a3a38054",
     },
     services: [
       {
@@ -25,14 +25,15 @@ module.exports = {
       }
     ],
     carouselImages: [
-      {
-        path: "imgs/Building_1.jpg",
-        altText: "A Beautiful metal building.",
-      },
-      {
-        path: "imgs/Building_2.jpg",
-        altText: "A Beautiful metal building.",
-      },
+      // This is incase we choose to add multiple images to the carousel
+      // {
+      //   path: "imgs/Building_1.jpg",
+      //   altText: "A Beautiful metal building.",
+      // },
+      // {
+      //   path: "imgs/Building_2.jpg",
+      //   altText: "A Beautiful metal building.",
+      // },
       {
         path: "imgs/Building_3.jpg",
         altText: "A Beautiful metal building.",
